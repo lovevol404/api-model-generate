@@ -34,6 +34,8 @@ public class TestApiBody {
     private boolean aboolean;
     @ApiInfo(value = "这是引用TestApiBody的描述")
     private TestApiBody self;
+    @ApiInfo(value = "这是TestEnum的描述")
+    private TestEnum testEnum;
 }
 
 enum TestEnum{

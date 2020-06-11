@@ -28,6 +28,8 @@ public class TestApiBody {
     private boolean aboolean;
     @ApiInfo(value = "这是引用TestApiBody的描述")
     private TestApiBody self;
+    @ApiInfo(value = "这是TestEnum的描述")
+    private TestEnum testEnum;
 }
 
 enum TestEnum{
@@ -116,6 +118,29 @@ enum TestEnum{
       "exampleValue": "ref#TestApiBody",
       "name": "self",
       "type": "TestApiBody"
+    },
+    {
+      "desc": "这是TestEnum的描述",
+      "exampleValue": [
+        {
+          "desc": "这是A的描述",
+          "value": "A"
+        },
+        {
+          "desc": "这是B的描述",
+          "value": "B"
+        },
+        {
+          "desc": "这是C的描述",
+          "value": "C"
+        },
+        {
+          "desc": "这是D的描述",
+          "value": "D"
+        }
+      ],
+      "name": "testEnum",
+      "type": "TestEnum"
     }
   ],
   "refs": [],
